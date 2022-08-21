@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Violartes</title>
+
+   <!--inicio pwa-->
+     <meta name="android-mobile-web-app-capable" content="yes">
+<meta name="android-mobile-web-app-status-bar-style" content="black">
+<meta name="android-mobile-web-app-title" content="berg">
+  <!-- Favicon -->
+    <link href="520x520.png" rel="icon">
+<link rel="android-touch-icon" href="520x520.png">
+
+<link rel="manifest" href="manifest.json" />
+
+<script type="module">
+   import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+   const el = document.createElement('pwa-update');
+   document.body.appendChild(el);
+</script>  
+
+      <!--fim pwwa-->
+
+ 
+  
+  
+</head>
+
+<body style="html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+  "  >
+
+
+ <!--inicio scrip pwa-->
+      
+      <script>// This is the service worker with the Cache-first network
+// Add this below content to your HTML page, or add the js file to your page at the very top to
+register service worker
+// Check compatibility for the browser we're running this in
+if ("serviceWorker" in navigator) {
+if (navigator.serviceWorker.controller) {
+console.log("[PWA Builder] active service worker found, no need to register");
+} else {
+// Register the service worker
+navigator.serviceWorker
+.register("pwabuilder-sw.js", {
+scope: "./"
+})
+.then(function (reg) {
+console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
+});
+}
+}
+</script>
+
+  
+  <div style="width:100% ; height:100%; margin-top:0; padding:0; ">
+
+      <div style="background-color:rgb(57,57,226); color: white; width:100vw; margin:0; padding: 0;">
+
+          <p>PROJETO |<span style="color:orange;"> VILA DAS ARTES <span style="color:white; background:orange;" > PROFESSOR LINDEMBERGUE SILVA</span></span></p>
+       
+         <a href="https://drive.google.com/file/d/1VqnZUlVT1pelVvOFBCNrPW5YK8b9S0Fd/view?usp=sharing">
+
+            <button style="background-color:rgb(57,87,87); color:white; border-radius:5%; border:1px solid white; border-left: none; padding: 1em;">BAIXAR O REPERTÓRIO
+            </button>
+
+        </a>
+
+      </div>
+
+  <img src="fundo.jpg" style="width:100vw ; height:100vh; margin: 0; padding: 0;">
+  
+    
+</div>
+
+</body>
+
+</html>

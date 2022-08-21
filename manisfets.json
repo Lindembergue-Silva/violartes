@@ -1,0 +1,18 @@
+{
+  "background_color": "#ffffff",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "Violartes",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "Violartes",
+  "start_url": "/",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "520x520.png",
+      "type": "image/png",
+      "sizes": "520x520"
+    }
+  ]
+}
